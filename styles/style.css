@@ -5,7 +5,9 @@
 
 
 body{
- font-family: 'Work Sans', sans-serif;           
+ font-family: 'Work Sans', sans-serif; 
+ margin: 0;
+ padding: 0;          
 }
 
 
@@ -180,6 +182,29 @@ background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 
 
 
+/* game section style */
+
+.game-zone{
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  display:grid ;
+  grid-template-columns: repeat(5,4fr);
+}
+.game-name{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: .5rem;
+}
+.game-name:hover{
+  border: 2px solid brown;
+  border-radius: 20px;
+}
+
+
+
+
 
 
 
@@ -227,6 +252,24 @@ background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     margin-top: 0%;
     padding-top: 0%;
   }
+  .game-zone{
+    position: relative;
+    top: 120rem;
+    grid-template-columns: repeat(2,2fr);
+    margin: 1rem;
+    width: 100%;
+
+  }
+  .game-zone,font img{
+    width:40%;
+
+  }
+
+
+
+
+
+
  }
 
   /* responsive with medium device */
@@ -246,6 +289,13 @@ background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
       margin-top: 10rem;
       padding-bottom: 5rem;
       height: 90vh;
+     }
+     .game-name{
+      grid-template-columns: repeat(3,3fr);
+      position: relative;
+      top:240rem;
+    
+      /* margin: .5rem; */
      }
 
 
