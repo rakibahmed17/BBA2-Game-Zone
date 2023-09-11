@@ -136,6 +136,52 @@ background: #4EC5F7;
 
 
 
+ /* online game play section */
+
+.game-play-container{
+  margin-left: 6rem;
+  display: flex;
+  justify-content: center;
+  background: #FFF;
+  
+}
+.game-play-content{
+  height: 100vh;
+  width: 40%;
+  font-size: .9rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.play-title{
+font-size: 2rem;
+font-weight: 400;
+}
+.play-title-special{
+  
+font-size: 2rem;
+font-weight: 400;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.game-play-container img{
+  margin-left: 2rem;
+  width: 70%;
+  
+}
+.small-play-img{
+  width: 45%;
+  position: relative;
+  top: -120px;
+  left: -30px;
+
+}
+
+
+
+
+
 
 
 
@@ -169,6 +215,18 @@ background: #4EC5F7;
   .game-card-first, .game-card-last{
     width: 100%;
   }
+  .game-play-container{
+  flex-direction: column-reverse;
+    position: relative;
+   top: 110rem;
+   height: 70vh;
+   padding: 1rem;
+   margin: 1rem;
+  }
+  .game-play-content{
+    margin-top: 0%;
+    padding-top: 0%;
+  }
  }
 
   /* responsive with medium device */
@@ -176,10 +234,21 @@ background: #4EC5F7;
     @media screen and  (min-width:576px) and (max-width:960px)  {
       .online-game-img{
         flex-direction: column;
+        
       }
       .game-card-first, .game-card-last{
         width: 100%;
       }
+     .game-play-container{
+      flex-direction: column-reverse;
+      position: relative;
+      top: 220rem;
+      margin-top: 10rem;
+      padding-bottom: 5rem;
+      height: 90vh;
+     }
+
+
       
     }
   
