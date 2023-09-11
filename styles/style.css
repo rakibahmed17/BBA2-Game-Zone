@@ -3,6 +3,7 @@
   
   /* google font shared */
 
+
 body{
  font-family: 'Work Sans', sans-serif;           
 }
@@ -11,6 +12,8 @@ body{
 
 
 /*  header and nav realeted style */
+
+
 header{
  width: 100%;
  height: 15vh;
@@ -37,11 +40,14 @@ align-items: center;
 
 nav>ul>li{
 list-style:none ;
-margin-left: 1rem;
-padding: 1rem;
+margin-left: .5rem;
+padding: .5rem;
 }
 
 /* banner-section style */
+
+
+
 .banner-container{
 margin-top: 20px;
   display: flex;
@@ -49,7 +55,7 @@ margin-top: 20px;
   background: #FFF;
 }
 .banner-content{
-   width: 30%;
+   width: 70%;
   font-size: 1rem;      
 margin-top: 3rem;
 margin-left: 3rem;
@@ -75,14 +81,15 @@ font-weight: 800;
   color: #FFF;
   font-size: 1.5rem;
  font-weight: 400;              
-padding: 15px 30px;
+padding: .5rem 1.5rem;
 border: 0;
  border-radius: 48px;
- background:#FF42A5 87.94%;        
+ background:#FF42A5 87.94%; 
+ margin-bottom: 1rem;       
 }
 .btn-secondary{   
  border: 0;                    
-padding: 15px 30px;
+padding: .5rem 1.5rem;
  color: #FFF;
  font-size: 20px;         
 font-weight: 400;    
@@ -90,7 +97,91 @@ border-radius: 48px;
 background: #4EC5F7;
 }
 .banner-container img{
- margin-left: 12.5rem;
- padding-left: 6.25rem;
- width: 50%;
+ width: 70%;
 }
+
+/* online game an funny video section */
+
+
+
+.online-game-container{
+ background: #FFF;;
+}
+.online-game-content{
+  text-align: center;
+  margin-top: 2rem;
+}
+.game-title-special{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+.online-game-container img{
+  width:95% ;
+}
+.online-game-img{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+
+}
+.game-card-first, .game-card-last{
+  width: 27%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive with mobile device */
+
+@media screen and (max-width:576px) {
+  nav,
+  .banner-container{
+    flex-direction: column;
+    margin: 3rem;
+    
+
+   
+  }
+  nav>ul{
+    flex-direction: row;
+    padding:15px;
+    margin: 15px;
+  }
+  .online-game-img{
+    flex-direction: column;
+  }
+  .game-card-first, .game-card-last{
+    width: 100%;
+  }
+ }
+
+  /* responsive with medium device */
+
+    @media screen and  (min-width:576px) and (max-width:960px)  {
+      .online-game-img{
+        flex-direction: column;
+      }
+      .game-card-first, .game-card-last{
+        width: 100%;
+      }
+      
+    }
+  
+  
+
